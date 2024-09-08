@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloPagina"
+        android:layout_width="272dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:text="Calculadora"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/primeiroValor"
+        android:layout_width="273dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Exemplo" />
+
+    <TextView
+        android:id="@+id/textoPrimeiroValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite o primeiro valor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/primeiroValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPagina" />
+
+    <TextView
+        android:id="@+id/textoSegundoValor"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Digite o segundo valor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primeiroValor" />
+
+    <EditText
+        android:id="@+id/segundoValor"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Exemplo"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoSegundoValor" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="274dp"
+        android:layout_height="66dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoMensagem"
+        android:layout_width="282dp"
+        android:layout_height="31dp"
+        android:text="Mensagem de resultados:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCalcular"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/botaoLimpar"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoMensagem"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/mensagemErro"
+        android:layout_width="263dp"
+        android:layout_height="41dp"
+        android:text="Mensagem erro:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoLimpar"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <TextView
+        android:id="@+id/mensagemTabela"
+        android:layout_width="259dp"
+        android:layout_height="38dp"
+        android:text="Mensagem tabela:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemErro"
+        app:layout_constraintVertical_bias="0.298" />
+</androidx.constraintlayout.widget.ConstraintLayout>
